@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <script src="./script.js" defer></script>
+        <title>AQUAPP - HYDRATATION APP</title>
+    </head>
+    <body>
+        <main class="hero-shell">
+            <header class="top-bar">
+                <a class="brand" href="./index.html" aria-label="Accueil AQUAPP">
+                    <i class="fas fa-water" aria-hidden="true"></i>
+                </a>
+
+                <nav class="menu" aria-label="Navigation principale">
+                    <a class="active" href="./index.html">Accueil</a>
+                    <a href="./pages/fonctionnalites/fonctionnalites.html">Fonctionnalités</a>
+                    <a href="./pages/patchnotes/patchnotes.html">Patch notes</a>
+                    <a href="./pages/telecharger/telecharger.html">Télécharger</a>
+                    <a href="./pages/nospolitiques/nospolitiques.html">Nos politiques</a>
+                </nav>
+
+                <div class="actions">
+                    <a class="icon-btn" href="./pages/faq/faq.html" aria-label="FAQ">
+                        <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+                    </a>
+                    <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+                </div>
+            </header>
+
+            <section class="hero-content">
+                <div class="left-panel">
+                    <h1>Contrôlez votre hydratation.</h1>
+                    <p>
+                       AQUAPP vous aide à rester bien hydraté tout au long de votre journée.
+                    </p>
+                    <a class="cta" href="./pages/ensavoirplus/ensavoirplus.html" aria-label="En savoir plus sur AQUAPP">
+                        En savoir plus
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <aside class="right-panel" aria-label="Mise en avant projets">
+                    <article class="glass-card featured-card">
+                        <div class="subscribers-head">
+                        </div>
+
+                    <article class="glass-card project-card">
+                        <div>
+                            <h2>Prochaines fonctionnalites à venir</h2>
+                        </div>
+                        <a class="go-btn" href="./pages/avenir/avenir.html" aria-label="Voir les prochaines fonctionnalités">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </aside>
+            </section>
+        </main>
+
+    <div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Menu de navigation">
+        <a class="active" href="./index.html">Accueil</a>
+        <div class="overlay-divider"></div>
+        <a href="./pages/fonctionnalites/fonctionnalites.html">Fonctionnalités</a>
+        <a href="./pages/patchnotes/patchnotes.html">Patch Notes</a>
+        <a href="./pages/telecharger/telecharger.html">Télécharger</a>
+        <a href="./pages/nospolitiques/nospolitiques.html">Nos politiques</a>
+    </div>
+
+    </body>
+</html>

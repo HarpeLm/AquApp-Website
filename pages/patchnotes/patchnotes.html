@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUAP — Patch Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="patchnotes.css">
+</head>
+<body>
+
+<main class="page-shell">
+
+    <header class="top-bar">
+        <a class="brand" href="../../index.html" aria-label="Accueil AQUAP">
+            <i class="fas fa-water" aria-hidden="true"></i>
+        </a>
+        <nav class="menu" aria-label="Navigation principale">
+            <a href="../../index.html">Accueil</a>
+            <a href="../fonctionnalites/fonctionnalites.html">Fonctionnalités</a>
+            <a class="active" href="#">Patch Notes</a>
+            <a href="../telecharger/telecharger.html">Télécharger</a>
+            <a href="../nospolitiques/nospolitiques.html">Nos politiques</a>
+        </nav>
+        <div class="actions">
+            <a class="icon-btn" href="../faq/faq.html" aria-label="FAQ">
+                <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+            </a>
+            <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+        </div>
+    </header>
+
+    <div class="page-content">
+
+        <div class="page-header">
+            <h1>Patch Notes</h1>
+            <p>Découvrez les dernières améliorations et corrections</p>
+        </div>
+
+        <div class="notes-list">
+
+            <article class="note-card">
+                <div class="note-head">
+                    <div>
+                        <h2>Version 1.0.0</h2>
+                        <span class="note-date">20 Mars 2026</span>
+                    </div>
+                    <span class="badge new">Lancement</span>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title blue">Suivi de l'hydratation</h3>
+                    <ul>
+                        <li>&#9889; Anneau de progression circulaire en temps réel sur l'écran d'accueil</li>
+                        <li>&#9889; Ajout rapide via 6 préréglages (150 ml → 1 000 ml) ou quantité personnalisée avec slider</li>
+                        <li>&#9889; Calcul de l'objectif journalier personnalisé selon le genre, le poids et la taille</li>
+                        <li>&#9889; Objectif personnalisable manuellement entre 500 ml et 5 000 ml</li>
+                        <li>&#9889; Historique du jour avec suppression individuelle des entrées</li>
+                        <li>&#9889; Objectif adaptatif automatique en cas de fortes chaleurs — augmente de 200 ml par degré au-dessus de 32°C (max +1 000 ml) grâce à la météo locale</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title amber">Alcool &amp; compensation hydrique</h3>
+                    <ul>
+                        <li>&#9889; Enregistrement des boissons alcoolisées : bière, vin, spiritueux, champagne, cocktail et boissons personnalisées</li>
+                        <li>&#9889; Compensation scientifique basée sur les grammes d'alcool pur — 10 ml d'eau à compenser par gramme d'alcool pur consommé</li>
+                        <li>&#9889; Historique alcool du jour dans la feuille d'ajout avec suppression individuelle</li>
+                        <li>&#9889; Compteur de jours sobres consécutifs remis à zéro à chaque consommation</li>
+                        <li>&#9889; Indicateur visuel de compensation actif tant qu'une consommation d'alcool s'applique</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title teal">Défis &amp; Succès</h3>
+                    <ul>
+                        <li>&#9889; 10 défis quotidiens : Matinal, Régulier, Grand buveur, Cadence parfaite, Grand écart, Flash hydraté,Régulier, Soirée tranquille, Journée active, Récupération. </li>
+                        <li>&#9889; 11 succès à débloquer : Constance, Semaine sobre, Sommeil hydraté, Canicule, Semaine parfaite, Marathonien, Indestructible, Centurion Sobre, Mois de fer, Centurion</li>
+                        <li>&#9889; Confettis animés et retour haptique à chaque défi ou succès débloqué</li>
+                        <li>&#9889; 1 défi légendaire que seul quelques fidéles utilisateur pourrons compléter Aqua'ddict ( Le Million de litre d'eau consommés )</li>
+                        <li>&#9889; Barre de progression globale des succès</li>
+                        <li>&#9889; Succès avancés (Mois de fer, Centurion) réservés aux abonnés Premium</li>
+                        <li>&#9889; Défi Canicule conditionnel — disponible uniquement lors d'une vague de chaleur détectée</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title blue">Statistiques</h3>
+                    <ul>
+                        <li>&#9889; Graphique en barres des 7 derniers jours avec indicateur de l'objectif</li>
+                        <li>&#9889; Moyenne journalière, jours actifs totaux et consommation d'alcool hebdomadaire</li>
+                        <li>&#9889; Analyse alcool détaillée (semaine et mois) réservée aux abonnés Premium</li>
+                        <li>&#9889; Streak objectif et streak sobre accessibles depuis l'accueil et le profil</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title amber">Rappels &amp; Notifications</h3>
+                    <ul>
+                        <li>&#9889; Rappels d'hydratation configurables : plage horaire, fréquence de 1h à 6h</li>
+                        <li>&#9889; Aperçu en temps réel des horaires de rappel dans les réglages</li>
+                        <li>&#9889; Notification automatique à minuit pour la nouvelle journée</li>
+                        <li>&#9889; Alerte canicule push — envoyée une seule fois par jour si la température dépasse 32°C</li>
+                        <li>&#9889; Messages de rappel localisés FR/EN selon la langue du téléphone</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title teal">Widgets iOS (iOS 17+)</h3>
+                    <ul>
+                        <li>&#9889; 4 widgets distincts disponibles sur l'écran d'accueil</li>
+                        <li>&#9889; 11 états visuels distincts selon la progression (0% → Legend) avec messages personnalisés et couleurs évolutives</li>
+                        <li>&#9889; Widget Original — couleur dynamique rouge → orange → vert selon la progression</li>
+                        <li>&#9889; Widget Style Duo — fond sombre qui s'illumine en vert à l'objectif atteint</li>
+                        <li>&#9889; Widget Streak 🔥 — votre série d'objectifs consécutifs</li>
+                        <li>&#9889; Widget Sobre 🌿 — votre série de jours sans alcool</li>
+                        <li>&#9889; Synchronisation instantanée entre l'app et les widgets via App Group</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title blue">Météo &amp; Adaptation</h3>
+                    <ul>
+                        <li>&#9889; Détection automatique de la température locale via Open-Meteo (sans compte, sans clé API)</li>
+                        <li>&#9889; Bannière canicule sur l'accueil dès 32°C avec l'objectif adapté affiché</li>
+                        <li>&#9889; Position GPS utilisée uniquement pour la requête météo — jamais stockée</li>
+                        <li>&#9889; Mise à jour météo automatique à chaque retour au premier plan</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title amber">Profil &amp; Personnalisation</h3>
+                    <ul>
+                        <li>&#9889; Onboarding guidé en 3 étapes : prénom, taille, poids, genre</li>
+                        <li>&#9889; Objectif recalculé automatiquement depuis le profil physique</li>
+                        <li>&#9889; Thème clair / sombre / système configurable dans les réglages</li>
+                        <li>&#9889; Badges de profil à équiper parmi les succès débloqués</li>
+                        <li>&#9889; Interface disponible en français et en anglais selon la langue du téléphone</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title teal">Premium</h3>
+                    <ul>
+                        <li>&#9889; Abonnement mensuel et annuel avec prix adapté automatiquement à votre pays</li>
+                        <li>&#9889; Succès avancés : Mois de fer (30 jours consécutifs), Centurion (100 jours)</li>
+                        <li>&#9889; Analyse alcool détaillée hebdomadaire et mensuelle</li>
+                        <li>&#9889; Historique illimité (30 jours pour les utilisateurs gratuits)</li>
+                        <li>&#9889; Liste d'icônes disponibles au choix entre 7 nouvelles icônes</li>
+                        <li>&#9889; Dynamic island disponible afin de profiter d'une expérience premium</li>
+                    </ul>
+                </div>
+
+                <div class="note-section">
+                    <h3 class="section-title blue">Expérience &amp; Accessibilité</h3>
+                    <ul>
+                        <li>&#9889; Retours haptiques sémantiques sur chaque action (ajout, suppression, objectif atteint, succès…)</li>
+                        <li>&#9889; VoiceOver complet — ensembles des labels d'accessibilité, valeurs et hints sur tous les éléments interactifs</li>
+                        <li>&#9889; Dynamic Type — textes adaptés jusqu'aux tailles Accessibilité XXL</li>
+                        <li>&#9889; Données sauvegardées localement avec SwiftData — aucun compte requis</li>
+                        <li>&#9889; Conforme RGPD — suppression complète des données à la désinstallation</li>
+                        <li>&#9889; Compatible iPhone iOS 17 et versions ultérieures</li>
+                    </ul>
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+
+</main>
+
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Menu de navigation">
+    <a class="active" href="#">Patch Notes</a>
+    <div class="overlay-divider"></div>
+    <a href="../../index.html">Accueil</a>
+    <a href="../fonctionnalites/fonctionnalites.html">Fonctionnalités</a>
+    <a href="../telecharger/telecharger.html">Télécharger</a>
+    <a href="../nospolitiques/nospolitiques.html">Nos politiques</a>
+</div>

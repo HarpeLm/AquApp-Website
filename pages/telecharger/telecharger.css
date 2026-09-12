@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+:root {
+    --ink: #f6f9ff;
+    --ink-soft: rgba(246, 249, 255, 0.72);
+    --dark-pill: rgba(12, 15, 19, 0.52);
+    --light-pill: rgba(255, 255, 255, 0.9);
+    --glass-bg: linear-gradient(160deg, rgba(8, 28, 50, 0.82), rgba(8, 18, 34, 0.68));
+    --glass-border: rgba(255, 255, 255, 0.18);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, #4e5e79 0%, transparent 45%),
+        radial-gradient(circle at 80% 80%, #273246 0%, transparent 40%),
+        linear-gradient(140deg, #0f141d 0%, #1a2433 100%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 12px;
+}
+
+/* ── Shell ── */
+.page-shell {
+    position: relative;
+    width: min(1220px, 100%);
+    min-height: min(780px, calc(100vh - 24px));
+    border-radius: 22px;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.84);
+    box-shadow: 0 22px 65px rgba(0, 0, 0, 0.42);
+    background:
+        linear-gradient(108deg, rgba(10, 14, 22, 0.72) 0%, rgba(10, 14, 22, 0.28) 50%, rgba(10, 14, 22, 0.62) 100%),
+        url('https://images.unsplash.com/photo-1444913525704-e060a5129113?q=80&w=2071&auto=format&fit=crop') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Top bar ── */
+.top-bar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    flex-shrink: 0;
+}
+
+.brand {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.menu a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: var(--dark-pill);
+    backdrop-filter: blur(10px) saturate(145%);
+    -webkit-backdrop-filter: blur(10px) saturate(145%);
+    transition: 0.25s ease;
+    white-space: nowrap;
+}
+
+.menu a.active,
+.menu a:hover,
+.menu a:focus-visible {
+    color: #10151d;
+    background: var(--light-pill);
+    border-color: transparent;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-btn,
+.menu-btn {
+    height: 34px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.86);
+    color: #111821;
+}
+
+.icon-btn {
+    width: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 14px;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ── Page content ── */
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 36px 40px;
+    gap: 48px;
+}
+
+/* ── Header ── */
+.page-header {
+    text-align: center;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: fadeUp 0.5s ease both;
+}
+
+.page-header h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.06;
+}
+
+.page-header p {
+    color: var(--ink-soft);
+    font-size: 0.96rem;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+/* ── App Store button ── */
+.appstore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 28px;
+    border-radius: 16px;
+    background: rgba(10, 10, 10, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    margin-top: 8px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+}
+
+.appstore-btn .fa-apple {
+    font-size: 2.2rem;
+}
+
+.appstore-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.appstore-sub {
+    font-size: 0.65rem;
+    font-weight: 400;
+    opacity: 0.75;
+    letter-spacing: 0.04em;
+}
+
+.appstore-main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+}
+
+/* ── Cards grid ── */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 900px;
+    animation: fadeUp 0.55s ease 0.15s both;
+}
+
+/* ── Download card ── */
+.dl-card {
+    border-radius: 18px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    padding: 30px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    color: var(--ink);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+/* ── Icon badge ── */
+.dl-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+.dl-icon.blue  { background: linear-gradient(145deg, #60b8ff 0%, #1a6cff 100%); font-size: 0.85rem; color: #fff; letter-spacing: 0.02em; }
+.dl-icon.amber { background: linear-gradient(145deg, #ffd26a 0%, #ff9500 100%); }
+.dl-icon.teal  { background: linear-gradient(145deg, #5ff3c0 0%, #00b88a 100%); }
+
+.dl-card h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.dl-card p {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.65;
+}
+
+/* ── Animation ── */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 780px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .page-content { gap: 32px; }
+}
+
+@media (max-width: 560px) {
+    .cards-grid { grid-template-columns: 1fr; max-width: 360px; }
+    .page-shell { min-height: calc(100vh - 24px); }
+    .top-bar { flex-wrap: wrap; }
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+    }
+    .menu::-webkit-scrollbar { display: none; }
+    .actions { margin-left: auto; }
+}
+
+/* ── Menu overlay ── */
+.menu-overlay {
+    position: fixed !important;
+    top: 66px;
+    left: auto;
+    transform: translateY(-10px);
+    z-index: 100;
+    width: min(320px, 88vw);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(12, 18, 28, 0.82);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.menu-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+.menu-overlay a {
+    display: block;
+    padding: 13px 18px;
+    border-radius: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: background 0.18s ease;
+    text-align: center;
+}
+.menu-overlay a:hover { background: rgba(255, 255, 255, 0.1); }
+.menu-overlay a.active { color: #4da6ff; font-weight: 700; }
+.menu-overlay .overlay-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 4px 8px;
+}
+.menu-btn { cursor: pointer; }
